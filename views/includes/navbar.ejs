@@ -1,55 +1,70 @@
 <style>
-  .search-btn{
+  .search-btn {
     background-color: #fe424d;
-    color:#fff;
+    color: #fff;
     border-radius: 25px;
-    padding:0 1rem 0 1rem;
-}
-.search-btn:hover{
-  background-color: #fe424d;
-    color:#fff;
-}
-.search-btn i{
-  display:inline;
-  margin-right: 0.5rem;
-}
-.search-inp{
-  border-radius: 25px;
-  padding:0.5rem 3rem 0.5rem 3rem;
-  font-size: 1rem;
+    padding: 0 1rem 0 1rem;
+  }
+
+  .search-btn:hover {
+    background-color: #fe424d;
+    color: #fff;
+  }
+
+  .search-btn i {
+    display: inline;
+    margin-right: 0.5rem;
+  }
+
+  .search-inp {
+    border-radius: 25px;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+    font-size: 1rem;
   }
 </style>
+
 <nav class="navbar navbar-expand-md bg-body-tertiary border-bottom sticky-top">
   <div class="container-fluid">
+    <!-- Brand -->
     <a class="navbar-brand" href="/listings">
       <i class="fa-solid fa-compass"></i>
     </a>
 
+    <!-- Toggler (hamburger) -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+
+    <!-- Collapsible content -->
     <div class="collapse navbar-collapse" id="navbarNav">
+      
+      <!-- Left nav -->
       <div class="navbar-nav">
         <a class="nav-link" href="/listings">Explore</a>
       </div>
+
+      <!-- Center search bar -->
       <div class="navbar-nav w-100 d-flex justify-content-center">
-      <form class="d-flex" role="search">
-      <input class="form-control me-2 search-inp" type="search" placeholder="Search" aria-label="Search"/>
-      <button class="btn search-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
-    </form>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2 search-inp" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn search-btn" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>Search
+          </button>
+        </form>
       </div>
-      
-    </div>
-      <div class="navbar-nav">
+
+      <!-- Right nav (Airbnb your home, Log in/out) -->
+      <div class="navbar-nav ms-auto">
         <a class="nav-link" href="/listings/new">Airbnb your home</a>
         <% if (typeof currUser === "undefined" || !currUser) { %>
-  <a class="nav-link" href="/signup"><b>Sign Up</b></a>
-  <a class="nav-link" href="/login"><b>Log in</b></a>
-<% } else { %>
-  <a class="nav-link" href="/logout"><b>Log out</b></a>
-<% } %>
+          <a class="nav-link" href="/signup"><b>Sign Up</b></a>
+          <a class="nav-link" href="/login"><b>Log in</b></a>
+        <% } else { %>
+          <a class="nav-link" href="/logout"><b>Log out</b></a>
+        <% } %>
       </div>
+      
     </div>
   </div>
 </nav>
