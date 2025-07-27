@@ -3,7 +3,7 @@
     background-color: #fe424d;
     color: #fff;
     border-radius: 25px;
-    padding: 0 1rem 0 1rem;
+    padding: 0 1rem;
   }
 
   .search-btn:hover {
@@ -18,13 +18,14 @@
 
   .search-inp {
     border-radius: 25px;
-    padding: 0.5rem 3rem 0.5rem 3rem;
+    padding: 0.5rem 3rem;
     font-size: 1rem;
   }
 </style>
 
 <nav class="navbar navbar-expand-md bg-body-tertiary border-bottom sticky-top">
   <div class="container-fluid">
+
     <!-- Brand -->
     <a class="navbar-brand" href="/listings">
       <i class="fa-solid fa-compass"></i>
@@ -38,7 +39,7 @@
 
     <!-- Collapsible content -->
     <div class="collapse navbar-collapse" id="navbarNav">
-      
+
       <!-- Left nav -->
       <div class="navbar-nav">
         <a class="nav-link" href="/listings">Explore</a>
@@ -55,16 +56,16 @@
       </div>
 
       <!-- Right nav (Airbnb your home, Log in/out) -->
-      <div class="navbar-nav ms-auto">
-        <a class="nav-link" href="/listings/new">Airbnb your home</a>
+      <div class="d-flex ms-auto align-items-center gap-3">
+        <a class="nav-link text-nowrap" href="/listings/new">Airbnb your home</a>
         <% if (typeof currUser === "undefined" || !currUser) { %>
-          <a class="nav-link" href="/signup"><b>Sign Up</b></a>
-          <a class="nav-link" href="/login"><b>Log in</b></a>
+          <a class="nav-link text-nowrap fw-bold" href="/signup">Sign Up</a>
+          <a class="nav-link text-nowrap fw-bold" href="/login">Log in</a>
         <% } else { %>
-          <a class="nav-link" href="/logout"><b>Log out</b></a>
+          <a class="nav-link text-nowrap fw-bold" href="/logout">Log out</a>
         <% } %>
       </div>
-      
+
     </div>
   </div>
 </nav>
