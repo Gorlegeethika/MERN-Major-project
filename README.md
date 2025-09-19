@@ -2,7 +2,8 @@
 
 ⚠️ Note: When you first open the deployed site via GitHub Pages, it may take a moment to load. If you see a "Page Not Found", don’t worry! Just click on the “Explore” button to view the full website properly.
 
-![image alt]
+![image alt](https://github.com/Gorlegeethika/MERN-Major-project/blob/7cd32356013df5b266ac5807d7a114ab3d9c38ed/airbnb.png)
+
 
 🚀 How to Run Locally
 
