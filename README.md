@@ -2,6 +2,8 @@
 
 ⚠️ Note: When you first open the deployed site via GitHub Pages, it may take a moment to load. If you see a "Page Not Found", don’t worry! Just click on the “Explore” button to view the full website properly.
 
+![image alt]
+
 🚀 How to Run Locally
 
 Follow the steps below to run the project on your local machine:
